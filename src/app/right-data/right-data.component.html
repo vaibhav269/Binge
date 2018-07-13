@@ -4,7 +4,7 @@
     <div  style="max-width: 100%"  *ngFor="let ele of catContainer | async"  id="{{ele[0].category}}">
         <h3>{{ele[0].category | uppercase }} </h3>
         <br>
-      <div class="card p-3 d-inline-block m-2 custom-card" *ngFor="let p of ele" style="width: 30%"  (mouseleave)="hideQuickView(p)">
+      <div class="card p-3 d-inline-block m-2 custom-card" *ngFor="let p of ele"  (mouseleave)="hideQuickView(p)">
         <iframe  [src]='p.video_url' allowfullscreen style="height: 120%">  </iframe>
           <div class="card-body p-0">
               <h5 class="card-title">{{p.name}}</h5>

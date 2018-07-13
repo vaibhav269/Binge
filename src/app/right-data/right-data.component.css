@@ -13,6 +13,7 @@ body{
     border: none;                
     font-size:70%;  
     position :relative;
+    width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
@@ -79,4 +80,10 @@ body{
 
 .restaurant_name{
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-card{
+        width:100%;
+    }
 }
