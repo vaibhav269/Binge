@@ -1,0 +1,82 @@
+body{
+    padding-top:3%;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+.card-body > *{
+    margin-top:4%;
+}
+
+.custom-card{
+    cursor: pointer;  
+    border: none;                
+    font-size:70%;  
+    position :relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
+.custom-card h5{
+    font-size: 130%;
+    opacity: 0.9;
+}
+
+
+.quick-view-modal{
+    display: none;
+    overflow-y: scroll;
+    top:-10%;
+    right:70%;
+    width:140%;
+    height: 120%;
+    position:  absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {right:0%}
+    to {right:70%}
+}
+
+.showQuickView{
+    display:block;
+}
+
+.custom-menu-card{
+    border: none;
+    display: inline-block;
+}
+
+.custom-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover .card-link{
+    border-top: 1px solid #eee;
+}
+
+.card-link{
+    padding-top:5px;
+    margin-bottom: 0;
+}
+
+
+.latitude{
+    display: none;
+}
+
+.longitude{
+    display: none;
+}
+
+.restaurant_id{
+    display: none;
+}
+
+.restaurant_name{
+    display: none;
+}

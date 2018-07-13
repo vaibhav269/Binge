@@ -1,0 +1,10 @@
+    <ul class="list-unstyled m-0 p-0 nav" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); overflow:auto">                                
+        <span *ngFor = "let ele of navEle | async" (click)="navEleClick(ele.category_name)">
+                    <li class="media p-3 list-ele" (click)="setActive(ele)" [ngClass]="{active : activeMenu == ele}">
+                                <img src="{{ele.logo_url}}" class="mr-2" width="30%" alt="image">                                                                            
+                          <div class="media-body">
+                                <h6 class="m-0">{{ele.category_name}}</h6>                                                  
+                          </div>                                              
+                    </li>
+      </span>                                
+  </ul>

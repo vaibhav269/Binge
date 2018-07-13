@@ -1,0 +1,13 @@
+.sideNav{
+    position: sticky; 
+    top:50vh;
+    z-index:1;
+}
+.navEle{
+    font-size: 130%;
+    font-family: sans-serif;
+}
+.active{    
+    font-size:170%;
+    color:rgba(240, 59, 59, 0.938);
+}

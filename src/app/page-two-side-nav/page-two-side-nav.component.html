@@ -1,0 +1,7 @@
+<ul  class="pr-5 sideNav list-unstyled">
+  <div *ngFor="let res of restroKeys | async" (click)="navEleClick(res)" style="width:100%;text-align: right;cursor: pointer;">
+      <li class="m-2 navEle" (click)="setActive(res)" [ngClass]="{active : activeMenu == res}">
+        {{res}}
+      </li>
+  </div>
+</ul>

@@ -1,0 +1,8 @@
+<div *ngFor="let dish of p.restroDetails[key]">
+                                    <div class="dish-container" >
+                                        <img style="width:20%" [src]="dish.poster_url">
+                                        <div class="card-body p-0">
+                                                <h5 class="card-title">{{dish.name}}</h5>
+                                        </div>
+                                    </div>
+                                </div>

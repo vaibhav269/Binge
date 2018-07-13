@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="topBar">
+        <app-page-two-top [restroId]="parentMessage"></app-page-two-top>
+    </div>
+
+  <div class="row" style="padding-top:3%;padding-left:4%;padding-bottom:3%;">
+        <div class="col-sm-4 col-md-4 pr-3 " style="border-right:1px solid #ddd;">
+            <app-page-two-side-nav [restroId]="parentMessage"></app-page-two-side-nav>
+        </div>
+
+        <div class="col-sm-8 col-md-8 pl-5">
+           <app-page-two-right-data [restroId]="parentMessage"></app-page-two-right-data>
+        </div>
+  </div>
+  </div>

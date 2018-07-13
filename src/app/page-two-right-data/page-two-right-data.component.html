@@ -1,0 +1,33 @@
+<div *ngFor="let dishCat of restroKeys | async" class="pt-3 rightData"style="border-bottom:3px solid black"  id="{{dishCat}}2">
+  <h1>{{dishCat}}</h1>
+  <ul *ngFor="let dish of restroDetail[dishCat]" class="list-unstyled mb-0 mt-4" style="border-bottom:2px solid #bbb ">
+    <li style="color:#777">
+        
+      <p style="color:#222;font-weight: bold">
+          
+        <ng-container *ngIf="dish.veg == 0; then vegLogo else nonvegLogo"></ng-container>
+         
+        <ng-template #vegLogo>
+            
+              <span style="display:inline-block;width:2%;border:0.5px solid green; padding:5px">
+                  <div style="height:10px;width:10px;border-radius:50%;background-color: green"></div>
+              </span> 
+
+          </ng-template>
+
+          <ng-template #nonvegLogo>
+            
+              <span style="display:inline-block;width:2%;border:0.5px solid red; padding:5px">
+                  <div style="height:10px;width:10px;border-radius:50%;background-color: red"></div>
+              </span>
+
+          </ng-template>          
+        
+        {{dish.name}}
+      </p>
+
+        <p>{{dish.desc}}</p>
+        <p style="color:#222">₹ {{dish.price}}</p>
+      </li>
+  </ul>
+</div>

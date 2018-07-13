@@ -1,0 +1,13 @@
+<div class="row" *ngFor="let res of restroDetail | async" style="background-color: #171a29;padding-top:3%;padding-left:10%; padding-right:7%;padding-bottom:3%;max-height: 30vh">
+    <div class="col-sm-4 col-md-4 ">
+            <iframe class="card-img-top"  [src]='restroVideo' allowfullscreen >  </iframe>            
+    </div>
+    <div class="col-sm-8 col-md-8 pl-5" style="color:#eee;width:100%">
+
+        <h2 style="color:white">{{res.hname}}</h2>
+        <p>{{res.h_address}}</p>
+        <p>{{res.hcuisine_type}}</p>
+        <p>Cost for two : {{res.h_cost_for_two}}</p>
+
+    </div>
+</div>
